@@ -11,7 +11,14 @@ function getData(){
 
 
 function sentences(){
-    sentenceArray = ['Today I had to ${verb} ${name} but right in the middle of it ${verb} came with this ${adjetive} book and i wanted to go too ${place}']
+    sentenceArray = [`Today I had to ${verb} ${name} but right in the middle of it ${verb} came with this ${adjetive} book and i wanted to go too ${place}`
+    , `insert verb here with name ${verb} ${name} now a ${adjetive} and a ${place}`]
 
+    ranN = Math.floor(Math.random() * sentenceArray.length)
 
+    return sentencefArray[ranN];
+    
 }
+
+console.log (sentences())
+console.log (verb()) 
