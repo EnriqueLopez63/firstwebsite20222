@@ -50,7 +50,7 @@ nav a{
 }
 .section3{
     background-image: url(images/pic7.jpg);
-    color: rgb(0, 148, 20);
+    color: cornflowerblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,6 +59,7 @@ nav a{
 
 .section3 h1{
     text-align: center;
+    
 }
 
 .section3 p{
@@ -90,7 +91,7 @@ input{
     color: cornflowerblue;
     font-size: 18px;
     padding: 10px;
-    border-color: transparent;
+    border-color: cornflowerblue;
     cursor: pointer;
 }
 
