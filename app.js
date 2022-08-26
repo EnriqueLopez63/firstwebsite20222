@@ -32,43 +32,57 @@ console.log (sentences())
 //second 
 
 
-var = [1, 2, 4, 9]
+var a = [1, 2, 4, 9]
 
 var wordArr = [
     {
-        word: "dog"
+        word: "dog",
         hint: "company you keep at home"
     },
     {
-        word: "place"
+        word: "place",
         hint: "were you are anytime"
     },
     {
-        word: "tree"
+        word: "tree",
         hint: "it grouws on the ground"
     },
     {
-        word: "computer"
+        word: "computer",
         hint: "youre using it right now"
-    },
+    }
 ]
 
-var rN = Math.floor(Math.random() * )
+var rN = Math.floor(Math.random() * wordArr.length);
 
 var word = wordArr[rN].word;
 var hint = wordArr[rN].hint;
 
-document.getElementById('word').innerHTML= word;
-document.getElementById('hint').innerHTML = hint;
+document.getElementById("word").innerHTML= word;
+document.getElementById("hint").innerHTML = hint;
 
 var splitWord = word.split("");
 
 var emptySplitWord = [];
 
-for (i = 0, i < splitWord.length; i++)_ {
+console.log(splitWord)
+
+for (i = 0; i < 5; i++) {
     emptySplitWord[i] = "_"
-    console.log (emptySplitWord);
-    document.getElementById("word") .innerHTML= emptySplitWord.
-    join("")
+    console.log(emptySplitWord)
+    document.getElementById("word").innerHTML = emptySplitWord.join(" ")
 
 }
+
+function enterLetter() {
+    var letter = document.getElementById("letter").value;
+
+    for ( x = 0; x < splitWord.length; x++) {
+        if (letter == splitWord[x])
+            emptySplitWord[x] = letter;
+            w.innerHTML = emptySplitWord.join("");
+    }
+
+}
+
+    
